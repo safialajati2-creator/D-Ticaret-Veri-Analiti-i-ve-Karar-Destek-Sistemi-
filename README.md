@@ -8,6 +8,16 @@ Bu proje, ham dış ticaret verilerini karar vermeyi kolaylaştıran anlamlı g�
 
 Sistem veri temizleme, temel ekonomik gösterge hesaplama, görselleştirme, tahminleme, kural tabanlı karar desteği ve otomatik PDF raporlama adımlarını tek bir Streamlit arayüzünde birleştirir.
 
+## 🎓 Akademik Çalışma
+
+Proje, **Beykoz Üniversitesi Mühendislik ve Mimarlık Fakültesi – Yazılım Mühendisliği** kapsamında hazırlanan **“Python Tabanlı Dış Ticaret Veri Analitiği ve Karar Destek Sistemi Tasarımı”** başlıklı akademik çalışmayla birlikte geliştirilmiştir.
+
+Akademik çalışma; Türkiye dış ticaret verilerinin analizi, veri ön işleme, gösterge hesaplama, makine öğrenmesiyle tahminleme, kural tabanlı karar desteği ve sistemin güçlü/zayıf yönlerinin değerlendirilmesini kapsamaktadır.
+
+📄 **Akademik rapor:** [Dış Ticaret Makalesı.pdf](Makale/D%C4%B1%C5%9F%20Ticaret%20Makales%C4%B1.pdf)
+
+> Raporda yer alan model konfigürasyonları ve deneysel sonuçlar, çalışmanın akademik deney aşamasını yansıtmaktadır. Repository içindeki uygulama kodu daha sonra geliştirilmiş bir sürüm olabilir; bu nedenle güncel davranış için `app.py` esas alınmalıdır.
+
 ## ✨ Temel Özellikler
 
 - CSV dosyası yükleme ve manuel veri girişi
