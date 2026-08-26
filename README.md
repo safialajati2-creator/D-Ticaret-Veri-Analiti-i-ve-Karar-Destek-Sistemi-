@@ -1,4 +1,8 @@
-# 📊 Dış Ticaret Karar Destek Sistemi
+# 📊 Foreign Trade Decision Support System
+
+<p align="center">
+  <b>English</b> | <a href="README_TR.md">Türkçe</a>
+</p>
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)
@@ -6,22 +10,21 @@
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Portfolio%20Project-success)
 
-Python ve Streamlit ile geliştirilen bu proje; dış ticaret verilerini temizleyen, temel ekonomik göstergeleri hesaplayan, ihracat ve ithalat eğilimlerini görselleştiren, makine öğrenmesiyle tahmin üreten ve kural tabanlı karar destek önerileri sunan interaktif bir veri analitiği uygulamasıdır.
+An interactive foreign trade analytics and decision support application built with **Python** and **Streamlit**. The system cleans trade data, calculates key economic indicators, visualizes export/import trends, produces machine-learning forecasts, generates rule-based decision-support insights, and exports analytical results as PDF reports.
 
-## 🖥️ Uygulamadan Görüntüler
+## 🖥️ Application Screenshots
 
 <p align="center">
   <img src="Sonu%C3%A7%20%C3%A7%C4%B1kt%C4%B1lar%C4%B1/1.jpeg" width="48%" />
   <img src="Sonu%C3%A7%20%C3%A7%C4%B1kt%C4%B1lar%C4%B1/2.jpeg" width="48%" />
 </p>
-
 <p align="center">
   <img src="Sonu%C3%A7%20%C3%A7%C4%B1kt%C4%B1lar%C4%B1/3.jpeg" width="48%" />
   <img src="Sonu%C3%A7%20%C3%A7%C4%B1kt%C4%B1lar%C4%B1/4.jpeg" width="48%" />
 </p>
 
 <details>
-<summary><b>Daha fazla ekran görüntüsü</b></summary>
+<summary><b>More screenshots</b></summary>
 <br>
 <p align="center">
   <img src="Sonu%C3%A7%20%C3%A7%C4%B1kt%C4%B1lar%C4%B1/5.jpeg" width="48%" />
@@ -33,93 +36,93 @@ Python ve Streamlit ile geliştirilen bu proje; dış ticaret verilerini temizle
 </p>
 </details>
 
-## 🎓 Akademik Çalışma
+## 🎓 Academic Background
 
-Proje, **Beykoz Üniversitesi Mühendislik ve Mimarlık Fakültesi – Yazılım Mühendisliği** kapsamında hazırlanan **“Python Tabanlı Dış Ticaret Veri Analitiği ve Karar Destek Sistemi Tasarımı”** başlıklı akademik çalışmayla birlikte geliştirilmiştir.
+The project was developed alongside the academic study **“Python Tabanlı Dış Ticaret Veri Analitiği ve Karar Destek Sistemi Tasarımı”** at **Beykoz University, Faculty of Engineering and Architecture – Software Engineering**.
 
-📄 **Akademik rapor:** [Dış Ticaret Makalesı.pdf](Makale/D%C4%B1%C5%9F%20Ticaret%20Makales%C4%B1.pdf)
+📄 **Academic report (Turkish):** [Dış Ticaret Makalesı.pdf](Makale/D%C4%B1%C5%9F%20Ticaret%20Makales%C4%B1.pdf)
 
-Akademik çalışma; Türkiye dış ticaret verilerinin analizi, veri ön işleme, gösterge hesaplama, makine öğrenmesiyle tahminleme, kural tabanlı karar desteği ve sistem değerlendirmesini kapsar. Repository içindeki `app.py`, çalışmanın portföy için düzenlenmiş uygulama sürümüdür.
+The study covers Turkish foreign-trade data analysis, preprocessing, indicator calculation, machine-learning forecasting, rule-based decision support, and system evaluation. The repository's `app.py` is the portfolio-oriented application version of this work.
 
-## ✨ Temel Özellikler
+## ✨ Key Features
 
-- CSV yükleme ve farklı encoding/ayraç biçimlerini algılama
-- Eksik, negatif, geçersiz ve yinelenen kayıtların temizlenmesi
-- İhracat, ithalat, dış ticaret dengesi ve toplam ticaret hacmi analizi
-- İhracatın ithalatı karşılama oranı ve yıllık değişim hesaplamaları
-- Streamlit tabanlı interaktif dashboard
-- Linear Regression ve Random Forest Regressor
-- Gecikmeli değişkenler (`Lag-1`, `Lag-2`) ve 3 dönemlik hareketli ortalama (`MA-3`)
-- Kronolojik train/test ayrımı
-- R² ve MAE ile model değerlendirmesi
-- Random Forest özellik önemleri
-- Gelecek yıllara yönelik özyinelemeli tahmin
-- Kural tabanlı karar destek önerileri
-- ReportLab ile otomatik PDF raporu
+- CSV upload with support for multiple encodings and separators
+- Cleaning of missing, negative, invalid, and duplicate records
+- Export, import, foreign-trade balance, and total trade-volume analysis
+- Export/import coverage ratio and annual change calculations
+- Interactive Streamlit dashboard
+- Linear Regression and Random Forest Regressor
+- Lag features (`Lag-1`, `Lag-2`) and 3-period moving average (`MA-3`)
+- Chronological train/test split
+- Model evaluation using R² and MAE
+- Random Forest feature importance analysis
+- Recursive future-period forecasting
+- Rule-based decision-support recommendations
+- Automatic PDF reporting with ReportLab
 
-## 🧰 Teknolojiler
+## 🧰 Tech Stack
 
-| Teknoloji | Kullanım |
+| Technology | Usage |
 |---|---|
-| Python | Ana programlama dili |
-| Streamlit | Web arayüzü |
-| Pandas | Veri temizleme ve analiz |
-| NumPy | Sayısal işlemler ve özellik üretimi |
-| Matplotlib | Veri görselleştirme |
-| Scikit-learn | Linear Regression, Random Forest ve performans metrikleri |
-| ReportLab | PDF raporlama |
+| Python | Core programming language |
+| Streamlit | Interactive web interface |
+| Pandas | Data cleaning and analysis |
+| NumPy | Numerical operations and feature engineering |
+| Matplotlib | Data visualization |
+| Scikit-learn | Regression models and evaluation metrics |
+| ReportLab | PDF report generation |
 
-## 🧠 Sistem Akışı
+## 🧠 System Workflow
 
-1. Kullanıcı CSV yükler veya uygulamadaki örnek veri setini kullanır.
-2. Sütun adları normalize edilir ve veriler doğrulanır.
-3. Eksik/geçersiz kayıtlar temizlenir.
-4. Dış ticaret dengesi, ticaret hacmi, karşılama oranı ve değişim oranları hesaplanır.
-5. Sonuçlar tablo ve grafiklerle gösterilir.
-6. Tahmin hedefi ve model seçilir.
-7. Model kronolojik olarak ayrılmış eğitim/test verisi üzerinde değerlendirilir.
-8. Gelecek dönem tahminleri üretilir.
-9. Kural tabanlı modül göstergeleri yorumlayarak karar destek mesajları oluşturur.
-10. Sonuçlar PDF raporu olarak indirilebilir.
+1. Upload a CSV file or use the built-in sample dataset.
+2. Normalize column names and validate the data.
+3. Clean missing and invalid records.
+4. Calculate trade balance, trade volume, coverage ratio, and change rates.
+5. Display analytical results through tables and charts.
+6. Select the forecasting target and model.
+7. Evaluate the model using a chronological training/test split.
+8. Generate future-period forecasts.
+9. Interpret indicators using the rule-based decision-support module.
+10. Export analytical results as a PDF report.
 
-## 🤖 Makine Öğrenmesi
+## 🤖 Machine Learning
 
-Uygulama iki regresyon modeli sunar:
+The application provides two regression models:
 
 - **Linear Regression**
-- **Random Forest Regressor** — `200` ağaç, `max_depth=5`, `random_state=42`
+- **Random Forest Regressor** — `200` trees, `max_depth=5`, `random_state=42`
 
-Model girdileri hedef serinin yılı, bir ve iki dönem gecikmeli değerleri ile önceki üç dönemin hareketli ortalamasından oluşur. Performans **R²** ve **MAE** ile ölçülür.
+Model inputs include the year, one- and two-period lag values of the target series, and a three-period moving average. Performance is evaluated with **R²** and **MAE**.
 
-> Küçük yıllık veri setlerinde model metrikleri yüksek varyans gösterebilir. Tahminler akademik/analitik demonstrasyon amaçlıdır; finansal veya ekonomik danışmanlık değildir.
+> Model metrics can have high variance on small annual datasets. Forecasts are intended for academic and analytical demonstration and should not be interpreted as financial or economic advice.
 
-## 💡 Karar Destek Modülü
+## 💡 Decision Support Module
 
-Kural tabanlı modül aşağıdaki göstergeleri değerlendirir:
+The rule-based module evaluates indicators including:
 
-- İhracatın ithalatı karşılama oranı
-- Dış ticaret açığı
-- Son dönem ihracat değişimi
-- Son dönem ithalat değişimi
-- Ticaret hacminin tarihsel seviyesi
+- Export/import coverage ratio
+- Foreign trade deficit
+- Latest export change
+- Latest import change
+- Trade volume relative to historical levels
 
-Bu bölüm otomatik analitik uyarılar üretir; profesyonel politika veya yatırım tavsiyesi yerine veri yorumlama demonstrasyonu olarak tasarlanmıştır.
+It produces automated analytical observations designed to demonstrate data-driven decision-support logic rather than professional policy or investment advice.
 
-## 📄 PDF Raporlama
+## 📄 PDF Reporting
 
-Uygulama ReportLab kullanarak özet göstergeler, analiz grafikleri, karar destek önerileri ve mevcutsa tahmin performansını içeren PDF raporu oluşturabilir.
+The application uses ReportLab to generate downloadable PDF reports containing summary indicators, analytical charts, decision-support observations, and forecasting performance when available.
 
-## 📚 Veri Seti
+## 📚 Dataset
 
-Repository içindeki CSV, **2005–2022** dönemine ait 18 yıllık örnek dış ticaret verisini içerir. Uygulamanın yerleşik demo verisi ise daha güncel bir örnek seri kullanır. Kullanıcı kendi `Yil`, `Ihracat`, `Ithalat` sütunlarını içeren CSV dosyasını da yükleyebilir.
+The CSV included in the repository contains **18 years of sample foreign-trade data from 2005 to 2022**. The application's built-in demo uses a more recent example series. Users can also upload their own CSV containing `Yil`, `Ihracat`, and `Ithalat` columns.
 
-> Veri dosyası portföy/akademik demonstrasyon amacıyla repository içinde tutulmaktadır. Gerçek analizlerde güncel ve doğrulanmış resmi kaynak kullanılması önerilir.
+> The included dataset is intended for portfolio and academic demonstration. Current and verified official data should be used for real-world analysis.
 
-## 🚀 Kurulum
+## 🚀 Installation
 
 ```bash
-git clone https://github.com/safialajati2-creator/D-Ticaret-Veri-Analiti-i-ve-Karar-Destek-Sistemi-.git
-cd D-Ticaret-Veri-Analiti-i-ve-Karar-Destek-Sistemi-
+git clone https://github.com/safialajati2-creator/foreign-trade-decision-support-system.git
+cd foreign-trade-decision-support-system
 python -m venv .venv
 ```
 
@@ -135,24 +138,25 @@ macOS / Linux:
 source .venv/bin/activate
 ```
 
-Bağımlılıkları yükleyin:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Uygulamayı başlatın:
+Run the application:
 
 ```bash
 streamlit run app.py
 ```
 
-## 📁 Proje Yapısı
+## 📁 Project Structure
 
 ```text
 ├── app.py
 ├── requirements.txt
 ├── README.md
+├── README_TR.md
 ├── .gitignore
 ├── Veri seti/
 │   └── dis_ticaret_2015_2022.csv
@@ -162,6 +166,6 @@ streamlit run app.py
     └── Dış Ticaret Makalesı.pdf
 ```
 
-## 📌 Proje Amacı
+## 🎯 Project Purpose
 
-Bu çalışma; **veri analizi, veri temizleme, özellik mühendisliği, makine öğrenmesi, veri görselleştirme, Streamlit arayüz geliştirme, karar destek mantığı ve otomatik raporlama** becerilerini tek bir uçtan uca projede göstermeyi amaçlar.
+This project demonstrates practical skills in **data analysis, data cleaning, feature engineering, machine learning, data visualization, Streamlit application development, decision-support logic, and automated reporting** within a single end-to-end software project.
