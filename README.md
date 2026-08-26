@@ -1,90 +1,90 @@
 # 📊 Dış Ticaret Karar Destek Sistemi
 
-Python ve Streamlit ile geliştirilen, dış ticaret verilerini analiz eden; ihracat ve ithalat eğilimlerini görselleştiren, makine öğrenmesi modelleriyle tahmin üreten ve karar destek önerileri sunan interaktif bir veri analitiği uygulaması.
-
-## Proje Özeti
-
-Bu proje, ham dış ticaret verilerini karar vermeyi kolaylaştıran anlamlı göstergelere dönüştürmek amacıyla geliştirilmiştir. Kullanıcı kendi CSV verisini yükleyebilir veya örnek veri seti üzerinden sistemi inceleyebilir.
-
-Sistem veri temizleme, temel ekonomik gösterge hesaplama, görselleştirme, tahminleme, kural tabanlı karar desteği ve otomatik PDF raporlama adımlarını tek bir Streamlit arayüzünde birleştirir.
+Python ve Streamlit ile geliştirilen bu proje; dış ticaret verilerini temizleyen, temel ekonomik göstergeleri hesaplayan, ihracat ve ithalat eğilimlerini görselleştiren, makine öğrenmesiyle tahmin üreten ve kural tabanlı karar destek önerileri sunan interaktif bir veri analitiği uygulamasıdır.
 
 ## 🎓 Akademik Çalışma
 
 Proje, **Beykoz Üniversitesi Mühendislik ve Mimarlık Fakültesi – Yazılım Mühendisliği** kapsamında hazırlanan **“Python Tabanlı Dış Ticaret Veri Analitiği ve Karar Destek Sistemi Tasarımı”** başlıklı akademik çalışmayla birlikte geliştirilmiştir.
 
-Akademik çalışma; Türkiye dış ticaret verilerinin analizi, veri ön işleme, gösterge hesaplama, makine öğrenmesiyle tahminleme, kural tabanlı karar desteği ve sistemin güçlü/zayıf yönlerinin değerlendirilmesini kapsamaktadır.
-
 📄 **Akademik rapor:** [Dış Ticaret Makalesı.pdf](Makale/D%C4%B1%C5%9F%20Ticaret%20Makales%C4%B1.pdf)
 
-> Raporda yer alan model konfigürasyonları ve deneysel sonuçlar, çalışmanın akademik deney aşamasını yansıtmaktadır. Repository içindeki uygulama kodu daha sonra geliştirilmiş bir sürüm olabilir; bu nedenle güncel davranış için `app.py` esas alınmalıdır.
+Akademik çalışma; Türkiye dış ticaret verilerinin analizi, veri ön işleme, gösterge hesaplama, makine öğrenmesiyle tahminleme, kural tabanlı karar desteği ve sistem değerlendirmesini kapsar. Repository içindeki `app.py`, çalışmanın portföy için düzenlenmiş uygulama sürümüdür.
 
 ## ✨ Temel Özellikler
 
-- CSV dosyası yükleme ve manuel veri girişi
-- Farklı CSV encoding ve ayraç biçimlerini destekleyen veri okuma
-- Eksik, negatif ve geçersiz kayıtların temizlenmesi
-- İhracat, ithalat, dış ticaret dengesi ve ticaret hacmi analizi
+- CSV yükleme ve farklı encoding/ayraç biçimlerini algılama
+- Eksik, negatif, geçersiz ve yinelenen kayıtların temizlenmesi
+- İhracat, ithalat, dış ticaret dengesi ve toplam ticaret hacmi analizi
 - İhracatın ithalatı karşılama oranı ve yıllık değişim hesaplamaları
-- İnteraktif analiz ekranları ve grafikler
-- Linear Regression ve Random Forest modelleri
-- Gelecek yıllara yönelik ihracat / ithalat tahmini
-- R² ve MAE ile model performansı değerlendirmesi
-- Random Forest özellik önemlerinin görüntülenmesi
+- Streamlit tabanlı interaktif dashboard
+- Linear Regression ve Random Forest Regressor
+- Gecikmeli değişkenler (`Lag-1`, `Lag-2`) ve 3 dönemlik hareketli ortalama (`MA-3`)
+- Kronolojik train/test ayrımı
+- R² ve MAE ile model değerlendirmesi
+- Random Forest özellik önemleri
+- Gelecek yıllara yönelik özyinelemeli tahmin
 - Kural tabanlı karar destek önerileri
-- Türkçe karakter destekli otomatik PDF raporu
+- ReportLab ile otomatik PDF raporu
 
-## 🧰 Kullanılan Teknolojiler
+## 🧰 Teknolojiler
 
 | Teknoloji | Kullanım |
 |---|---|
 | Python | Ana programlama dili |
-| Streamlit | Web uygulaması ve kullanıcı arayüzü |
-| Pandas | Veri işleme ve analiz |
-| NumPy | Sayısal işlemler |
+| Streamlit | Web arayüzü |
+| Pandas | Veri temizleme ve analiz |
+| NumPy | Sayısal işlemler ve özellik üretimi |
 | Matplotlib | Veri görselleştirme |
-| Scikit-learn | Linear Regression ve Random Forest modelleri |
-| ReportLab | Otomatik PDF raporlama |
+| Scikit-learn | Linear Regression, Random Forest ve performans metrikleri |
+| ReportLab | PDF raporlama |
 
 ## 🧠 Sistem Akışı
 
-1. Kullanıcı CSV yükler, manuel veri girer veya örnek veri setini kullanır.
-2. Sistem veriyi doğrular ve temizler.
-3. Dış ticaret göstergeleri otomatik hesaplanır.
-4. Analiz sonuçları tablo ve grafiklerle sunulur.
-5. Kullanıcı tahmin hedefini ve makine öğrenmesi modelini seçer.
-6. Sistem modeli eğitir ve gelecek dönem tahminlerini üretir.
-7. Karar destek modülü mevcut göstergeleri değerlendirerek öneriler oluşturur.
-8. Sonuçlar PDF raporu olarak indirilebilir.
+1. Kullanıcı CSV yükler veya uygulamadaki örnek veri setini kullanır.
+2. Sütun adları normalize edilir ve veriler doğrulanır.
+3. Eksik/geçersiz kayıtlar temizlenir.
+4. Dış ticaret dengesi, ticaret hacmi, karşılama oranı ve değişim oranları hesaplanır.
+5. Sonuçlar tablo ve grafiklerle gösterilir.
+6. Tahmin hedefi ve model seçilir.
+7. Model kronolojik olarak ayrılmış eğitim/test verisi üzerinde değerlendirilir.
+8. Gelecek dönem tahminleri üretilir.
+9. Kural tabanlı modül göstergeleri yorumlayarak karar destek mesajları oluşturur.
+10. Sonuçlar PDF raporu olarak indirilebilir.
 
-## 🤖 Tahmin Modelleri
+## 🤖 Makine Öğrenmesi
 
-Uygulama iki farklı regresyon yaklaşımı sunar:
+Uygulama iki regresyon modeli sunar:
 
 - **Linear Regression**
-- **Random Forest Regressor**
+- **Random Forest Regressor** — `200` ağaç, `max_depth=5`, `random_state=42`
 
-Tahminleme sürecinde yıl, trend ve önceki dönem ihracat/ithalat değerlerinden oluşturulan gecikmeli (lag) özellikler kullanılır. Model performansı **R²** ve **MAE** metrikleriyle gösterilir.
+Model girdileri hedef serinin yılı, bir ve iki dönem gecikmeli değerleri ile önceki üç dönemin hareketli ortalamasından oluşur. Performans **R²** ve **MAE** ile ölçülür.
 
-> Not: Tahminler analitik/akademik amaçlıdır ve gerçek yatırım veya ekonomi politikası tavsiyesi olarak değerlendirilmemelidir.
+> Küçük yıllık veri setlerinde model metrikleri yüksek varyans gösterebilir. Tahminler akademik/analitik demonstrasyon amaçlıdır; finansal veya ekonomik danışmanlık değildir.
 
 ## 💡 Karar Destek Modülü
 
-Sistem yalnızca veriyi göstermeyi değil, hesaplanan göstergeleri yorumlamayı da amaçlar. Karşılama oranı, dış ticaret açığı, ihracat/ithalat büyüme eğilimleri ve toplam ticaret hacmi gibi göstergeler üzerinden uyarı, bilgi ve olumlu durum mesajları üretir.
+Kural tabanlı modül aşağıdaki göstergeleri değerlendirir:
+
+- İhracatın ithalatı karşılama oranı
+- Dış ticaret açığı
+- Son dönem ihracat değişimi
+- Son dönem ithalat değişimi
+- Ticaret hacminin tarihsel seviyesi
+
+Bu bölüm otomatik analitik uyarılar üretir; profesyonel politika veya yatırım tavsiyesi yerine veri yorumlama demonstrasyonu olarak tasarlanmıştır.
 
 ## 📄 PDF Raporlama
 
-ReportLab ile oluşturulan rapor şunları içerebilir:
+Uygulama ReportLab kullanarak özet göstergeler, analiz grafikleri, karar destek önerileri ve mevcutsa tahmin performansını içeren PDF raporu oluşturabilir.
 
-- Temel dış ticaret göstergeleri
-- Veri tablosu
-- Analiz grafikleri
-- Tahmin sonuçları ve performans metrikleri
-- Karar destek önerileri
-- Genel sonuç özeti
+## 📚 Veri Seti
 
-Türkçe karakterlerin doğru görüntülenmesi için sistem uygun Unicode destekli fontları otomatik olarak bulmaya çalışır.
+Repository içindeki CSV, **2005–2022** dönemine ait 18 yıllık örnek dış ticaret verisini içerir. Uygulamanın yerleşik demo verisi ise daha güncel bir örnek seri kullanır. Kullanıcı kendi `Yil`, `Ihracat`, `Ithalat` sütunlarını içeren CSV dosyasını da yükleyebilir.
 
-## 🚀 Kurulum ve Çalıştırma
+> Veri dosyası portföy/akademik demonstrasyon amacıyla repository içinde tutulmaktadır. Gerçek analizlerde güncel ve doğrulanmış resmi kaynak kullanılması önerilir.
+
+## 🚀 Kurulum
 
 ```bash
 git clone https://github.com/safialajati2-creator/D-Ticaret-Veri-Analiti-i-ve-Karar-Destek-Sistemi-.git
@@ -133,8 +133,4 @@ streamlit run app.py
 
 ## 📌 Proje Amacı
 
-Proje; veri analizi, makine öğrenmesi, veri görselleştirme, kullanıcı arayüzü geliştirme ve otomatik raporlama becerilerini tek bir uygulamada birleştiren akademik ve portföy odaklı bir çalışmadır.
-
-## ⚠️ Kullanım Notu
-
-Bu uygulama eğitim, akademik çalışma ve veri analitiği demonstrasyonu amacıyla geliştirilmiştir. Üretilen tahminler ve karar destek önerileri profesyonel finansal veya ekonomik danışmanlık niteliğinde değildir.
+Bu çalışma; **veri analizi, veri temizleme, özellik mühendisliği, makine öğrenmesi, veri görselleştirme, Streamlit arayüz geliştirme, karar destek mantığı ve otomatik raporlama** becerilerini tek bir uçtan uca projede göstermeyi amaçlar.
