@@ -1,6 +1,37 @@
 # 📊 Dış Ticaret Karar Destek Sistemi
 
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Portfolio%20Project-success)
+
 Python ve Streamlit ile geliştirilen bu proje; dış ticaret verilerini temizleyen, temel ekonomik göstergeleri hesaplayan, ihracat ve ithalat eğilimlerini görselleştiren, makine öğrenmesiyle tahmin üreten ve kural tabanlı karar destek önerileri sunan interaktif bir veri analitiği uygulamasıdır.
+
+## 🖥️ Uygulamadan Görüntüler
+
+<p align="center">
+  <img src="Sonu%C3%A7%20%C3%A7%C4%B1kt%C4%B1lar%C4%B1/1.jpeg" width="48%" />
+  <img src="Sonu%C3%A7%20%C3%A7%C4%B1kt%C4%B1lar%C4%B1/2.jpeg" width="48%" />
+</p>
+
+<p align="center">
+  <img src="Sonu%C3%A7%20%C3%A7%C4%B1kt%C4%B1lar%C4%B1/3.jpeg" width="48%" />
+  <img src="Sonu%C3%A7%20%C3%A7%C4%B1kt%C4%B1lar%C4%B1/4.jpeg" width="48%" />
+</p>
+
+<details>
+<summary><b>Daha fazla ekran görüntüsü</b></summary>
+<br>
+<p align="center">
+  <img src="Sonu%C3%A7%20%C3%A7%C4%B1kt%C4%B1lar%C4%B1/5.jpeg" width="48%" />
+  <img src="Sonu%C3%A7%20%C3%A7%C4%B1kt%C4%B1lar%C4%B1/6.jpeg" width="48%" />
+</p>
+<p align="center">
+  <img src="Sonu%C3%A7%20%C3%A7%C4%B1kt%C4%B1lar%C4%B1/7.jpeg" width="48%" />
+  <img src="Sonu%C3%A7%20%C3%A7%C4%B1kt%C4%B1lar%C4%B1/8.jpeg" width="48%" />
+</p>
+</details>
 
 ## 🎓 Akademik Çalışma
 
@@ -126,7 +157,7 @@ streamlit run app.py
 ├── Veri seti/
 │   └── dis_ticaret_2015_2022.csv
 ├── Sonuç çıktıları/
-│   └── ...
+│   └── 1.jpeg ... 8.jpeg
 └── Makale/
     └── Dış Ticaret Makalesı.pdf
 ```
