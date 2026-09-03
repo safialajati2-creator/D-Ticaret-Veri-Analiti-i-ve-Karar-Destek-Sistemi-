@@ -169,3 +169,9 @@ streamlit run app.py
 ## 🎯 Project Purpose
 
 This project demonstrates practical skills in **data analysis, data cleaning, feature engineering, machine learning, data visualization, Streamlit application development, decision-support logic, and automated reporting** within a single end-to-end software project.
+
+## Developer
+
+Software Developer
+
+[GitHub](https://github.com/safialajati2-creator) · [LinkedIn](https://www.linkedin.com/in/mustafa-alajati-8a1aa4286/?isSelfProfile=true) · [Email](mailto:Safialajati2@gmail.com)
