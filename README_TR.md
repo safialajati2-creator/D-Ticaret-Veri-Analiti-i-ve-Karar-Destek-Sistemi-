@@ -169,3 +169,9 @@ streamlit run app.py
 ## 🎯 Proje Amacı
 
 Bu çalışma; **veri analizi, veri temizleme, özellik mühendisliği, makine öğrenmesi, veri görselleştirme, Streamlit arayüz geliştirme, karar destek mantığı ve otomatik raporlama** becerilerini tek bir uçtan uca projede göstermeyi amaçlar.
+
+## Geliştirici
+
+Software Developer
+
+[GitHub](https://github.com/safialajati2-creator) · [LinkedIn](https://www.linkedin.com/in/mustafa-alajati-8a1aa4286/?isSelfProfile=true) · [Email](mailto:Safialajati2@gmail.com)
